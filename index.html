@@ -8,19 +8,64 @@
   gtag('js', new Date());
   gtag('config', 'UA-142587639-1');
 </script>
+
 <style>
 a{
-color:grey
+color:black;
+text-decoration:none;
 }
 p{
 font-family : Sans-serif, Arial, verdana ;
 }
+.saw{
+color:grey;
+}
 li{
 font-family : Sans-serif, Arial, verdana ;
+font-size : 17px;
 }
-H{
+body{
+margin:0;
+}
+H1{
 font-family : Arial, Sans-serif, verdana ;
+font-size : 30px;
+text-align: center;
+border-bottom : 1px solid gray;
+margin : 0;
+padding: 20px;
 }
+H2{
+font-family : Arial, Sans-serif, verdana ;
+font-size : 25px;
+}
+#grid ol{
+border-right : 1px solid gray;
+width:150px;
+margin:0;
+padding:20px;
+padding-left: 30px;
+padding-right: 10px;
+}
+#grid li{
+padding:3px;
+}
+#grid{
+ display: grid;
+ grid-template-columns: 200px 1fr;
+}
+#article{
+    padding-left: 20px;
+}
+@media(max-width:600px){
+#grid{
+ display: block;
+}
+#grid ol{
+border-right : none;
+}
+}
+
 </style>
 <meta charset="UTF-8"/>
 <title>Their Great Journey</title>
@@ -28,21 +73,18 @@ font-family : Arial, Sans-serif, verdana ;
 
 <body>
 <H1><a href="index.html">Yong&Syeon's Family Life in NZ</a></H1>
-<img src="familyphoto (3).jpg" width=600 >
-<ol> 
-<li><a href="familyphotos.html">Family photos</a></li>
-<li>Kid's School Life</li>
-<li>Events</li>
-</ol>
+<div id="grid">
+ <ol> 
+  <li><a href="familyphotos.html" class="saw">Family photos</a></li>
+  <li><a class="saw" id="active">Kid's School Life</a></li>
+  <li>Events</li>
+ </ol>
 
-
-<H2>Starting of their Journey</H2>
-<p>They moved to NZ in 2017. At first, Yong and Harry moved to Christchurch on September and prepared for settling down in there. </p>
-<p>Harry made his name as Harry following the famous boy's name of "Harry Potter" of J.K.Rowling. And </P>
-
-
-
-<br>
+ <div id="article">
+  <H2>Starting of their Journey</H2>
+   <p>They moved to NZ in 2017. At first, Yong and Harry moved to Christchurch on September and prepared for settling down in there. </p>
+   <p>Harry made his name as Harry following the famous boy's name of "Harry Potter" of J.K.Rowling. And </P>
+ <br>
 <div id="disqus_thread"></div>
 <script>
 /**
@@ -62,7 +104,10 @@ s.setAttribute('data-timestamp', +new Date());
 })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+ 
+ </div>
+</div>
 
-
+</div>
 </body> 
 </html>

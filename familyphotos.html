@@ -10,14 +10,61 @@
 </script>
 <style>
 a{
-color:grey
+color:black;
+text-decoration:none;
 }
 p{
 font-family : Sans-serif, Arial, verdana ;
 }
+.saw{
+color:grey;
+}
 li{
 font-family : Sans-serif, Arial, verdana ;
+font-size : 17px;
 }
+body{
+margin:0;
+}
+H1{
+font-family : Arial, Sans-serif, verdana ;
+font-size : 30px;
+text-align: center;
+border-bottom : 1px solid gray;
+margin : 0;
+padding: 20px;
+}
+H2{
+font-family : Arial, Sans-serif, verdana ;
+font-size : 25px;
+}
+#grid ol{
+border-right : 1px solid gray;
+width:150px;
+margin:0;
+padding:20px;
+padding-left: 30px;
+padding-right: 10px;
+}
+#grid li{
+padding:3px;
+}
+#grid{
+ display: grid;
+ grid-template-columns: 200px 1fr;
+}
+#article{
+    padding-left: 20px;
+}
+@media(max-width:600px){
+#grid{
+ display: block;
+}
+#grid ol{
+border-right : none;
+}
+}
+
 .rotate-90 {
     -webkit-transform: rotate(90deg);
         -ms-transform: rotate(90deg);
@@ -30,24 +77,27 @@ font-family : Sans-serif, Arial, verdana ;
 
 <body>
 <H1><a href="index.html">Yong&Syeon's Family Life in NZ</a></H1>
-<ol> 
-<li><a href="familyphotos.html">Family photos</a></li>
-<li>Kid's School Life</li>
-<li>Events</li>
-</ol>
+<div id="grid">
+ <ol> 
+  <li><a href="familyphotos.html" class="saw">Family photos</a></li>
+  <li><a class="saw" id="active">Kid's School Life</a></li>
+  <li>Events</li>
+ </ol>
 
-
-<H2>Photos in NZ</style></H2>
+<div id="grid">
+<div >
+<H2>Photos in NZ</H2>
 <P>
-<img src="familyphoto (2).jpg" width=600 > in War Museum
-<img src="familyphoto (3).jpg" width=600 > at 
-<img src="familyphoto (4).jpg" width=600 > in the airplane
-<img src="familyphoto (7).jpg" width=600 > with Yong's friends
-<br><br><br><br><br><br><br><br>
-<img src="familyphoto (6).jpg" class="rotate-90" width=600 >
-<br><br><br><br><br><br><br><br>
-<img src="familyphoto (1).jpg" class="rotate-90" width=600 >
-<br><br><br><br><br><br><br><br>
+<img src="familyphoto (2).jpg" width=600 > in War Museum <br><br>
+<img src="familyphoto (3).jpg" width=600 > at Hiking pathway <br><br>
+<img src="familyphoto (4).jpg" width=600 > in the airplane<br><br>
+<img src="familyphoto (7).jpg" width=600 > with Yong's friends<br><br>
+<img src="familyphoto (8).jpg" width=600 > with Yong's friend's family<br><br>
+<br><br><br><br><br>
+<img src="familyphoto (6).jpg" class="rotate-90" width=400 float="left"> where??
+<br><br><br><br><br><br><br><br><br><br>
+<img src="familyphoto (1).jpg" class="rotate-90" width=400 > I have never<br> been better!
+<br><br><br><br>
 </P>
 
 <br>
@@ -70,7 +120,8 @@ s.setAttribute('data-timestamp', +new Date());
 })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
+</div>
+</div>
 
 </body> 
 </html>
